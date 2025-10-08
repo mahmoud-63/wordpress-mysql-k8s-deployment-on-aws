@@ -1,0 +1,29 @@
+
+---
+
+### **.gitignore**
+```bash
+# Kubernetes / YAML related
+*.log
+*.tmp
+*.bak
+*.swp
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Python / Shell scripts
+__pycache__/
+*.pyc
+
+# Credentials (if added locally)
+*.env
+secrets/*
+

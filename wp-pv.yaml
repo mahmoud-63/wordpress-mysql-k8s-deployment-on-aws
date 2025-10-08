@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: wp-pv
+spec:
+  storageClassName: wp-sc
+  capacity: 
+    storage: 5Gi
+  accessModes: 
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Retain
+  csi:
+    driver: efs.csi.aws.com
+    volumeHandle: fs-0bc4e5e61f870d74c::fsap-00fab2ce3c7aafa58
